@@ -17,8 +17,9 @@ mainP5 = new p5(
       if (animation.setup) animation.setup(p);
     };
     p.draw = () => {
-      p.fill(0, 0, 0);
-      p.text(Math.round(p.frameRate(), 2), 300, 20);
+      p.stroke(0, 0, 0);
+      p.fill(255, 255, 255);
+      p.text("FPS: " + Math.round(p.frameRate(), 2), 300, 20);
       circs = animation.draw(p);
     };
   },
