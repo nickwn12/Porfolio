@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+
+  .mainContainer {
+    nav {
+      div {
+        height: 50px;
+        // width: 100%;
+        flex-direction: row;
+        float: left;
+        color: red;
+        overflow: auto;
+        position: absolute;
+        padding-bottom: 9em;
+        padding-left: 9em;
+        padding-right: 9em;
+        margin-bottom: 10em;
+        // padding: auto;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+        h1 {
+          float: right;
+          color: white;
+        }
+      }
+    }
+  }
+}

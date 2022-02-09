@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+body nav {
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: #eb393c;
+}
+
+body nav .burger {
+  cursor: pointer;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .burger div {
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  background: white;
+}
+
+body nav .burger .line2 {
+  -webkit-box-flex: right;
+      -ms-flex: right;
+          flex: right;
+  width: 20px;
+}
+
+body nav ul {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body nav li {
+  margin: 0 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+
+body nav a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+body nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+body nav a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #bdf6fc;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+body section div h1 {
+  font-size: 3rem;
+}
+
+body section div p {
+  font-size: 1rem;
+}
+
+body section#home div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section#home div .nickpic {
+  width: 300px;
+  height: auto;
+}
+
+body section#ap div {
+  background: white;
+  padding: 20px;
+  border-radius: 3em;
+}
+
+body section#ap div a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+body section#ap div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body section#ap div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section#ap div div div img {
+  width: 300px;
+  height: 150px;
+}
+
+body section#contact .contact_div {
+  padding-top: 20px;
+  text-align: center;
+  height: 80%;
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+}
+
+body section#contact .contact_div .contact_tbl {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section#contact .contact_div .contact_tbl div {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body section#contact .contact_div .contact_tbl .contact_catigory {
+  padding-right: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body section#resume .resume_img {
+  padding-top: 8.5vh;
+  height: 92vh;
+  width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  body nav ul {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body nav ul {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  body {
+    overflow-x: hidden;
+  }
+  body div {
+    width: 90%;
+  }
+  body div section#home div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body div section#home div img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body div section#home div h1 {
+    font-size: 1.5em;
+  }
+  body div section#home div p {
+    color: #ac2e30;
+  }
+  body div section#contact .contact_div {
+    width: 90%;
+  }
+  body div section#contact .contact_div .contact_tbl {
+    padding-left: 20x;
+    font-size: 0.75rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body div section#contact .contact_div .contact_tbl p {
+    font-size: 0.75rem;
+  }
+  body div section#resume div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body div section#resume div h1 {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+  }
+  body div section#resume div .resume_img {
+    height: auto;
+    width: 100%;
+  }
+  body nav .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  body nav ul {
+    height: 92vh;
+    right: 0px;
+    background: #ac2e30;
+    width: 30%;
+    -webkit-box-flex: right;
+        -ms-flex: right;
+            flex: right;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.5em;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  body .nav-active ul {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

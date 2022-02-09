@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+body .mainContainer nav div {
+  height: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: left;
+  color: red;
+  overflow: auto;
+  position: absolute;
+  padding-bottom: 9em;
+  padding-left: 9em;
+  padding-right: 9em;
+  margin-bottom: 10em;
+}
+
+body .mainContainer nav div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .mainContainer nav div h1 {
+  float: right;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
