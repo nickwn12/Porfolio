@@ -13,6 +13,7 @@ let reset_balls;
 let cf_slider;
 let animation = {
   setup(p) {
+    // p.color(255, 255, 255);
     p.fill(239, 247, 0);
     num_slider = p.createSlider(1, 1000, 20, 1);
     num_slider.position(10, 10);
@@ -27,6 +28,8 @@ let animation = {
   },
   draw(p) {
     p.background(0, 0, 0, 50);
+    p.fill(255, 255, 255);
+    p.stroke(0, 0, 0);
 
     p.text(`Number of Balls:${num_slider.value()}`, 160, 20);
     p.text(

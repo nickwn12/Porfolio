@@ -4,22 +4,26 @@
 }
 
 body {
-  background: black;
-
-  .mainContainer {
+  background-color: #bdf6fc;
+  div {
+    display: flex;
+    flex-direction: column;
     nav {
+      background: #eb393c;
+      justify-items: center;
+      height: 100px;
+
       div {
-        height: 50px;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 100px;
         // width: 100%;
         flex-direction: row;
-        float: left;
-        color: red;
+
+        color: #eb393c;
         overflow: auto;
         position: absolute;
-        padding-bottom: 9em;
-        padding-left: 9em;
-        padding-right: 9em;
-        margin-bottom: 10em;
+
         // padding: auto;
         img {
           height: 100%;
@@ -27,9 +31,33 @@ body {
           object-fit: contain;
         }
         h1 {
-          float: right;
+          // float: right;
+          white-space: nowrap;
+          // overflow: hidden;
+          font-size: 5em;
           color: white;
         }
+      }
+    }
+    div {
+      input {
+        // padding-top: 100px;
+        margin-top: 100px;
+      }
+      button {
+        margin-left: 300px;
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        background-color: #eb393c;
+        padding: 10px;
+        // height: 4em;
+        // width: 8em;
+        border-width: 0px;
+        box-shadow: none;
+        border-color: #bdf6fc;
+        margin-top: 30px;
+        border-radius: 3px;
       }
     }
   }
