@@ -5,18 +5,22 @@
 
 body {
   background-color: #bdf6fc;
+
   div {
     display: flex;
     flex-direction: column;
+
     nav {
       background: #eb393c;
       justify-items: center;
-      height: 100px;
+      align-items: center;
+      height: 8vh;
 
       div {
+        align-items: center;
         width: 100%;
         justify-content: space-evenly;
-        height: 100px;
+        height: 8vh;
         // width: 100%;
         flex-direction: row;
 
@@ -34,15 +38,25 @@ body {
           // float: right;
           white-space: nowrap;
           // overflow: hidden;
-          font-size: 5em;
+          font-size: 2em;
           color: white;
+        }
+        a {
+          // float: right;
+          padding-left: 5vh;
+          white-space: nowrap;
+          // overflow: hidden;
+          font-size: 2em;
+          color: white;
+          text-decoration: none;
         }
       }
     }
     div {
+      height: 92vh;
       input {
         // padding-top: 100px;
-        margin-top: 100px;
+        margin-top: 8vh;
       }
       button {
         margin-left: 300px;

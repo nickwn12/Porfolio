@@ -33,6 +33,7 @@ let animation = {
     d_lst = new dots(p, 2000);
     console.log(d_lst);
     p.background(0, 0, 0);
+    update_dots();
   },
   draw(p) {
     // console.log(tail_len)
