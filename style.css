@@ -148,6 +148,9 @@ body section div p {
 }
 
 body section#home div {
+  background: white;
+  padding: 20px;
+  border-radius: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +213,6 @@ body section#ap div div div img {
 body section#contact .contact_div {
   padding-top: 20px;
   text-align: center;
-  height: 80%;
   width: 50%;
   background: white;
   border-radius: 20px;
@@ -226,7 +228,7 @@ body section#contact .contact_div .contact_tbl {
 }
 
 body section#contact .contact_div .contact_tbl div {
-  height: 60vh;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

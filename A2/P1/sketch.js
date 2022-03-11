@@ -12,7 +12,7 @@ mainP5 = new p5(
     // Use HSL mode (WAAAYYY better than RGB!)
 
     p.setup = () => {
-      p.createCanvas(window.innerWidth, window.innerHeight - 100);
+      p.createCanvas(window.innerWidth, window.innerHeight - 63);
 
       if (animation.setup) animation.setup(p);
     };

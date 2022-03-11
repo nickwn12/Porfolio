@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #bdf6fc;
+  background-color: #000000;
+  overflow-y: hidden;
 }
 
 body div {

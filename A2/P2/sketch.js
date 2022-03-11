@@ -15,7 +15,7 @@ mainP5 = new p5(
     p.setup = () => {
       console.log(window);
       console.log(screen);
-      p.createCanvas(window.innerWidth, window.innerHeight);
+      p.createCanvas(window.innerWidth, window.innerHeight - 63);
 
       if (animation.setup) animation.setup(p);
     };

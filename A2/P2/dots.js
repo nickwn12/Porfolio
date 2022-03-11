@@ -25,7 +25,6 @@ class dots {
         x__ = this.p.width / 2;
         y__ = this.p.height / 2;
       }
-      console.log(spwn);
       if (spwn == 2) {
         console.log("here");
         x__ = this.p.width - 2;

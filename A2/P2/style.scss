@@ -1,51 +1,47 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: #000000;
+  background-color: #bdf6fc;
   overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
   div {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
     nav {
       background: #eb393c;
       justify-items: center;
-      align-items: center;
+      //   align-items: center;
+
       height: 8vh;
 
       div {
         align-items: center;
+        flex-grow: 1;
         width: 100%;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         height: 8vh;
-        // width: 100%;
+        display: flex;
         flex-direction: row;
-
+        flex-wrap: nowrap;
         color: #eb393c;
-        overflow: auto;
+        overflow: hidden;
         position: absolute;
 
-        // padding: auto;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-        }
         h1 {
-          // float: right;
+          //   float: right;
           white-space: nowrap;
           // overflow: hidden;
           font-size: 2em;
           color: white;
+          text-align: center;
+          flex-grow: 1;
         }
         a {
           // float: right;
           padding-left: 5vh;
           white-space: nowrap;
           // overflow: hidden;
+          align-items: center;
           font-size: 2em;
           color: white;
           text-decoration: none;
@@ -55,7 +51,6 @@ body {
     div {
       height: 92vh;
       input {
-        // padding-top: 100px;
         margin-top: 8vh;
       }
       button {
@@ -65,8 +60,6 @@ body {
         color: white;
         background-color: #eb393c;
         padding: 10px;
-        // height: 4em;
-        // width: 8em;
         border-width: 0px;
         box-shadow: none;
         border-color: #bdf6fc;
